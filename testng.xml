@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Listeners.ProjectListeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/alexa/OneDrive/Desktop/LMSTestingEnyata">
+        <classes>
+            <class name="TestCases.AddCourWithOutCertificateTest">
+                <methods>
+                    <include name="TC_008_verifyCreateCourseWithoutCert"/>
+                </methods>
+            </class><class name="TestCases.AddLessonsTest">
+            <methods>
+                <include name="TC_010_verifyAddLessonToCourse"/>
+            </methods>
+        </class>
+            <class name="TestCases.AdminTest">
+                <methods>
+                    <include name="TC_007_verifyAddCourse"/>
+                </methods>
+            </class>
+            <class name="TestCases.LoginTest">
+                <methods>
+                    <include name="TC_001_validLoginDetails"/>
+                    <include name="TC_002_emptyEmailAndPasswordTextField"/>
+                    <include name="TC_003_verifyEmptyUserNameAndValidPassword"/>
+                    <include name="TC_004_verifyValidUserNameAndEmptyPassword"/>
+                    <include name="TC_005_verifyInvalidEmailAddressFormatAndValidPassword"/>
+                    <include name="TC_006_verifyNonExistingUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
