@@ -16,10 +16,10 @@ public class LoginTest extends BaseClass {
     AdminPage adminPage;
     @Test(testName = "Verify valid email and valid password",priority = 1)
     public void TC_001_validLoginDetails(){
-        loginPage.setEmailField("Alexanderenyata@yopmail.com"+ Keys.TAB);
-        loginPage.setPasswordField("P@ssw0rd"+Keys.TAB);
+        loginPage.setEmailField("argonoka@gmail.com"+ Keys.TAB);
+        loginPage.setPasswordField("!@Password12345"+Keys.TAB);
         adminPage= loginPage.clickLogin();
-        assertEquals(adminPage.getLoginUserName(),"Alexander","login failed");
+        assertEquals(adminPage.getLoginUserName(),"Dennis","login failed");
 
 
     }
